@@ -10,6 +10,29 @@ package ec.edu.ups.clases;
  * @version 2.0
  * @author Carmen Bravo
  */
+// Nombre de la clase
 public class Estudiante {
-    
+
+    /**
+     * Atributos de la clase Estudiante
+     */
+
+    private Carrera carrera;
+
+    /**
+     * Consige la informacion con respecto a carrera
+     * @param carrera 
+     */
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
+    /**
+     * establecela informacion con respecto a carrera
+     * @return Carrera
+     */
+    public Carrera getCarrera() {
+        return carrera;
+    }
+
 }

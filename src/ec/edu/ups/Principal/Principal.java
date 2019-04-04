@@ -6,10 +6,16 @@
 package ec.edu.ups.Principal;
 
 /**
- * @since 2019
- * @version 2.0
+ * 
  * @author Carmen Bravo
  */
 public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }
