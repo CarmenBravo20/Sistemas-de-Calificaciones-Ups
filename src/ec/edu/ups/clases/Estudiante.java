@@ -16,12 +16,12 @@ public class Estudiante {
     /**
      * Atributos de la clase Estudiante
      */
-
     private Carrera carrera;
 
     /**
      * Consige la informacion con respecto a carrera
-     * @param carrera 
+     *
+     * @param carrera
      */
     public void setCarrera(Carrera carrera) {
         this.carrera = carrera;
@@ -29,10 +29,24 @@ public class Estudiante {
 
     /**
      * establecela informacion con respecto a carrera
+     *
      * @return Carrera
      */
     public Carrera getCarrera() {
         return carrera;
     }
+    
+    /**
+     * Aqui se resume toda la informacion conseguida y se muestra en una sola
+     * linea
+     *
+     * @return (String) informacion resumida
+     */
 
+    @Override
+    public String toString() {
+        return "Estudiante{" + "carrera=" + carrera + '}';
+    }
+
+    
 }

@@ -34,7 +34,6 @@ public class Grupo {
      *
      * @param nombre
      */
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -71,9 +70,19 @@ public class Grupo {
      *
      * @return int
      */
-
     public int getCupo() {
         return cupo;
+    }
+
+    /**
+     * Aqui se resume toda la informacion conseguida y se muestra en una sola
+     * linea
+     *
+     * @return (String) informacion resumida
+     */
+    @Override
+    public String toString() {
+        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre + ", cupo=" + cupo + '}';
     }
 
 }

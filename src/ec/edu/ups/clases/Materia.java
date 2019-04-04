@@ -56,7 +56,6 @@ public class Materia {
      *
      * @param numeroHoras
      */
-
     public void setNumeroHoras(int numeroHoras) {
         this.numeroHoras = numeroHoras;
     }
@@ -75,7 +74,6 @@ public class Materia {
      *
      * @param grupo
      */
-
     public void setGrupo(Grupo grupo) {
         this.grupo = grupo;
     }
@@ -94,7 +92,6 @@ public class Materia {
      *
      * @return int
      */
-
     public int getCodigo() {
         return codigo;
     }
@@ -104,7 +101,6 @@ public class Materia {
      *
      * @return string
      */
-
     public String getNombre() {
         return nombre;
     }
@@ -123,7 +119,6 @@ public class Materia {
      *
      * @return int
      */
-
     public int getNumeroHoras() {
         return numeroHoras;
     }
@@ -151,9 +146,19 @@ public class Materia {
      *
      * @return profesor
      */
-
     public Profesor getProfesor() {
         return profesor;
+    }
+
+    /**
+     * Aqui se resume toda la informacion conseguida y se muestra en una sola
+     * linea
+     *
+     * @return (String) informacion resumida
+     */
+    @Override
+    public String toString() {
+        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", numeroCreditos=" + numeroCreditos + ", numeroHoras=" + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo + ", profesor=" + profesor + '}';
     }
 
 }

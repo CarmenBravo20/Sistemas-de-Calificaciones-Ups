@@ -36,7 +36,6 @@ public class Persona {
     /**
      * Establece la informacion con respecto al nombre
      */
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -46,7 +45,6 @@ public class Persona {
      *
      * @param cedula
      */
-
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
@@ -101,7 +99,6 @@ public class Persona {
      *
      * @return string
      */
-
     public String getNombre() {
         return nombre;
     }
@@ -111,7 +108,6 @@ public class Persona {
      *
      * @return cedula
      */
-
     public String getCedula() {
         return cedula;
     }
@@ -130,7 +126,6 @@ public class Persona {
      *
      * @return string
      */
-
     public String getDireccion() {
         return direccion;
     }
@@ -140,7 +135,6 @@ public class Persona {
      *
      * @return string
      */
-
     public String getCorreo() {
         return correo;
     }
@@ -152,6 +146,17 @@ public class Persona {
      */
     public Sede getSede() {
         return sede;
+    }
+
+    /**
+     * Aqui se resume toda la informacion conseguida y se muestra en una sola
+     * linea
+     *
+     * @return (String) informacion resumida
+     */
+    @Override
+    public String toString() {
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + ", sede=" + sede + '}';
     }
 
 }
