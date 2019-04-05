@@ -11,7 +11,7 @@ package ec.edu.ups.clases;
  * @author Carmen Bravo
  */
 //Nombre de la clase
-public class Profesor {
+public class Profesor extends Persona{
 
     /**
      * Atributos de la clase Profesor
@@ -19,6 +19,10 @@ public class Profesor {
     private String titulo;
     private double salario;
     private String cargo;
+    
+    public Profesor(){
+    
+}
 
     /**
      * Establece la informacion con respecto al titulo

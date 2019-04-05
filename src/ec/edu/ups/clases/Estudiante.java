@@ -11,12 +11,18 @@ package ec.edu.ups.clases;
  * @author Carmen Bravo
  */
 // Nombre de la clase
-public class Estudiante {
+public class Estudiante extends Persona{
 
     /**
      * Atributos de la clase Estudiante
      */
     private Carrera carrera;
+    
+    
+    public Estudiante (){
+    
+}
+   
 
     /**
      * Consige la informacion con respecto a carrera
