@@ -20,8 +20,28 @@ public class Estudiante extends Persona{
     
     
     public Estudiante (){
+        
     
-}
+}  
+    
+    
+    public Estudiante(int codigo){
+        super(codigo);
+        
+    }
+    // constructor de la clase estudiante
+    public Estudiante(int codigo, String nombre, String cedula){
+        // hace referencia a los atributosde mi padre y le pasa al constructor con esoso atributos
+        super(codigo, nombre, cedula);
+    }
+
+    //es un constructor con todos  los datos de la clase padre persona y  mas los de la clase Estudiante
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.carrera = carrera;
+    }
+    
+    
    
 
     /**

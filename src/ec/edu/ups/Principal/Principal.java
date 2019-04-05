@@ -5,6 +5,8 @@
  */
 package ec.edu.ups.Principal;
 
+import ec.edu.ups.clases.Estudiante;
+
 /**
  * 
  * @author Carmen Bravo
@@ -16,6 +18,16 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Estudiante estudiante=new Estudiante();
+        estudiante.setCodigo(1);
+        estudiante.setNombre("Alexandra");
+        estudiante.setCedula("0107593873");
+        estudiante.setTelefono("3014167");
+        estudiante.setDireccion("Av. pasaje y Carlos Molina");
+        estudiante.setCorreo("alexandra5620000@gmail.com");
+        
     }
+    
     
 }

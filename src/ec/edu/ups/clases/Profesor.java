@@ -22,8 +22,27 @@ public class Profesor extends Persona{
     
     public Profesor(){
     
-}
 
+    }
+
+    public Profesor(int codigo) {
+        super(codigo);
+    }
+
+    public Profesor(int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+    }
+    
+//es un  constructor con todos los datos de la clase padre que en este caso seria Persona mas los datos  de la clase profesor
+
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
+    
+    
     /**
      * Establece la informacion con respecto al titulo
      *
