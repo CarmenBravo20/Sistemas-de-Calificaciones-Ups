@@ -24,6 +24,17 @@ public class Materia {
     private Grupo grupo;
     private Profesor profesor;
 
+    //constructor
+    public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numeroCreditos = numeroCreditos;
+        this.numeroHoras = numeroHoras;
+        this.nivel = nivel;
+    }
+    
+    
+
     /**
      * Establece la informacion con respecto al codigo
      *

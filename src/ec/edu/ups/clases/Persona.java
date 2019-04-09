@@ -22,7 +22,7 @@ public class Persona {
     private String telefono;
     private String direccion;
     private String correo;
-    private Sede sede;
+    //private Sede sede;
 
     
     
@@ -42,18 +42,20 @@ public class Persona {
     public Persona(int codigo) {
         this.codigo = codigo;
     }
-    
-    
 
-    public Persona(int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+    //constructor de todos  atributos del padre
+    public Persona(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
         this.direccion = direccion;
         this.correo = correo;
-        this.sede = sede;
     }
+    
+    
+
+   
     
     
     
@@ -110,15 +112,7 @@ public class Persona {
         this.correo = correo;
     }
 
-    /**
-     * Establece la informacion con respecto a la sede
-     *
-     * @param sede
-     */
-    public void setSede(Sede sede) {
-        this.sede = sede;
-    }
-
+ 
     /**
      * Consige la informacion con respecto al codigo
      *
@@ -174,15 +168,6 @@ public class Persona {
     }
 
     /**
-     * Consige la informacion con respecto a la sede
-     *
-     * @return sede
-     */
-    public Sede getSede() {
-        return sede;
-    }
-
-    /**
      * Aqui se resume toda la informacion conseguida y se muestra en una sola
      * linea
      *
@@ -190,7 +175,11 @@ public class Persona {
      */
     @Override
     public String toString() {
-        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + ", sede=" + sede + '}';
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", direccion=" + direccion + ", correo=" + correo + '}';
     }
+
+   
+    
+   
 
 }

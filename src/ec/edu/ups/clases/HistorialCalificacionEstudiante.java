@@ -11,35 +11,29 @@ package ec.edu.ups.clases;
  * @author Carmen Bravo
  */
 //Nombre de la clase
-public class HistorialCalificacion {
+public class HistorialCalificacionEstudiante {
+    //crear una lista  para cada estudiante crear una lista  de historialcCALIFICACION 
+    //agregar materia de programacion  y poner las calificaciones  se usa el set, se hace 
 
     /**
      * Atributos de la clase HistorialCalificacion
      */
-    private Materia materia;
-    private Estudiante estudiante;
+    //private Materia materia;
+   // private Estudiante estudiante;
     private int aprovechamiento1;
     private int examen1;
     private int aprovechamiento2;
     private int examen2;
 
-    /**
-     * Establece la informacion con respecto a la materia
-     *
-     * @param materia
-     */
-    public void setMateria(Materia materia) {
-        this.materia = materia;
+    public HistorialCalificacionEstudiante(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
+        this.aprovechamiento1 = aprovechamiento1;
+        this.examen1 = examen1;
+        this.aprovechamiento2 = aprovechamiento2;
+        this.examen2 = examen2;
     }
 
-    /**
-     * Establece la informacion con respecto al estudiante
-     *
-     * @param estudiante
-     */
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
-    }
+ 
+    
 
     /**
      * Establece la informacion con respecto al aprovechamiento1
@@ -78,24 +72,6 @@ public class HistorialCalificacion {
     }
 
     /**
-     * Consige la informacion con respecto a la materia
-     *
-     * @return materia
-     */
-    public Materia getMateria() {
-        return materia;
-    }
-
-    /**
-     * Consige la informacion con respecto al estudiante
-     *
-     * @return estudiante
-     */
-    public Estudiante getEstudiante() {
-        return estudiante;
-    }
-
-    /**
      * Consige la informacion con respecto al aprovechamiento1
      *
      * @return int
@@ -130,16 +106,21 @@ public class HistorialCalificacion {
     public int getExamen2() {
         return examen2;
     }
-
-    /**
+       /**
      * Aqui se resume toda la informacion conseguida y se muestra en una sola
      * linea
      *
      * @return (String) informacion resumida
      */
+    
+
     @Override
     public String toString() {
-        return "HistorialCalificacion{" + "materia=" + materia + ", estudiante=" + estudiante + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
+        return "HistorialCalificacionEstudiante{" + "aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
     }
+
+   
+ 
+    
 
 }

@@ -5,6 +5,7 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,6 +25,19 @@ public class Sede {
     private String telefono;
     private List<Carrera> carreras;
 
+    //constructor
+    public Sede(int codigo, String nombre, String direccion, String telefono) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        carreras = new ArrayList<>();
+    }
+
+    
+    public Sede(){
+      carreras = new ArrayList<>();
+    }
     /**
      * Establece la informacion con respecto al codigo
      *
@@ -112,6 +126,10 @@ public class Sede {
      */
     public List<Carrera> getCarreras() {
         return carreras;
+    }
+    
+    public void agregarCarrera(Carrera carrera){
+        carreras.add(carrera);
     }
 
     /**

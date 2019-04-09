@@ -5,6 +5,9 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @since 2019
  * @version 2.0
@@ -12,67 +15,61 @@ package ec.edu.ups.clases;
  */
 // Nombre de la clase
 public class Estudiante extends Persona{
+    ////////////////////////////////////////////////////////////////////////////////
+    //Declaracion de metodos// 
 
-    /**
-     * Atributos de la clase Estudiante
-     */
     private Carrera carrera;
+    private List<HistorialCalificacionEstudiante>calificacion;
+
     
-    
-    public Estudiante (){
-        
-    
-}  
-    
-    
-    public Estudiante(int codigo){
-        super(codigo);
-        
+   
+
+          
+    public Carrera getCarrera() {
+        return carrera;
     }
-    // constructor de la clase estudiante
-    public Estudiante(int codigo, String nombre, String cedula){
-        // hace referencia a los atributosde mi padre y le pasa al constructor con esoso atributos
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+    
+    public void agregarCalificacion(HistorialCalificacionEstudiante calificacion){
+         this.calificacion.add(calificacion);
+    }
+
+    public Estudiante(int codigo) {
+        super(codigo);
+    }
+
+    public Estudiante(int codigo, String nombre, String cedula) {
         super(codigo, nombre, cedula);
     }
 
-    //es un constructor con todos  los datos de la clase padre persona y  mas los de la clase Estudiante
-    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+    public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
         this.carrera = carrera;
+        calificacion = new ArrayList<>();
     }
+    
+    
+     @Override
+    public String toString() {
+        return "Estudiante: " + "\n Nombre: "+ this.getNombre() + "\n Cedula: " + this.getCedula() + "\n Codigo: " + this.getCodigo() + "\n Direccion: " 
+                + this.getDireccion()+ "\n Telefono: " + this.getTelefono() +"\n Carrera: " + carrera + "\n calificaciones: " + calificacion ;
+    }
+}
+
+    
+  
     
     
    
 
-    /**
-     * Consige la informacion con respecto a carrera
-     *
-     * @param carrera
-     */
-    public void setCarrera(Carrera carrera) {
-        this.carrera = carrera;
-    }
-
-    /**
-     * establecela informacion con respecto a carrera
-     *
-     * @return Carrera
-     */
-    public Carrera getCarrera() {
-        return carrera;
-    }
     
-    /**
-     * Aqui se resume toda la informacion conseguida y se muestra en una sola
-     * linea
-     *
-     * @return (String) informacion resumida
-     */
-
-    @Override
-    public String toString() {
-        return "Estudiante{" + "carrera=" + carrera + '}';
-    }
+    
+   
 
     
-}
+
+    
+
