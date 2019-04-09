@@ -18,12 +18,7 @@ import ec.edu.ups.clases.Sede;
  * @author Carmen Bravo
  */
 public class Principal {
-    //crear 2 profesores 4 estudiantes  y dos grupos
-    //hacer las listas 
-    //instancias las listas en todos los constructores
-    //anadir dos materias a cada carrera
-    //a cada materia agregar un grupo y un profesor con los setters
-    //22 prueba
+    
 
     /**
      * @param args the command line arguments
